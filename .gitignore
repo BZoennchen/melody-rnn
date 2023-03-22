@@ -1,3 +1,10 @@
+# specific to this repo
+dataset/
+deutschl/
+midi/
+*.h5
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
