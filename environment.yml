@@ -168,4 +168,3 @@ dependencies:
       - webcolors==1.12
       - werkzeug==2.2.3
       - wrapt==1.15.0
-prefix: /opt/homebrew/Caskroom/miniconda/base/envs/tf-m1

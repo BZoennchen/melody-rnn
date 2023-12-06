@@ -36,7 +36,7 @@ var melodyGenerator, synth, tempo, recorder, sendMessage, toEncoding, mapToEvent
 
 melodyGenerator = NetAddr("localhost", 6449);
 synth = \sine_sum;
-recorder = MIDIRecorder(\rec, synth, mono: true);
+recorder = MIDIRecorder(\rec, synth, mono: true, log: true);
 
 sendMelody = {
 	arg seed;
@@ -120,7 +120,7 @@ toEncoding = {
 
 MIDIdef.cc('record', {
 	arg val;
-	//val.postln;
+	val.postln;
 	if(val == 127, {
 		if(recorder.isRecording, {
 			recorder.pause;
@@ -157,3 +157,4 @@ OSCdef(
 );
 )
 
+"test" ++ 4
